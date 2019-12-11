@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<link rel="stylesheet" href="format.css" />
+		<script type="text/javascript" src="../scripts/js/canvas.js"></script>
+        <title>STiL</title>
+    </head>
+
+    <!-- Base de l'application, est static pour toutes les pages de l'appli -->
+	<body>
+		<header>
+			<img id="logo" src="./images/Logo_STiL.png" alt="logo de l'entrerprise"/>
+			<a id="bouton_deco" href="login.html">Déconnexion</a>
+			<div id="nom_employe" onclick="go_to_parameter()">Pascal JOURDAN</div>
+		</header>
+
+		<main>
+			<!-- menu de navigation permettant de changer de page via js -->
+			<nav>
+				<div class="case_menu" onclick="go_to_home()"><img class="logo_menu" src="./images/logo_home.png" alt="home"/></div>
+				<div class="case_menu" onclick="go_to_visualisation()"><img class="logo_menu" src="./images/logo_visu.png" alt="visualisation"/></div>
+				<div class="case_menu" onclick="go_to_action()"><img class="logo_menu" src="./images/logo_gestion.png" alt="home"/></div>
+				<div class="case_menu" onclick="go_to_parameter()"><img class="logo_menu" src="./images/logo_param.png" alt="home"/></div>
+			</nav>
+		
+			<!-- zone ou est affichée le contenu de l'application -->
+			<section id="center-panel" w3-include-html="../pages/home.html">
+			</section> 	
+		</main>
+		
+		<footer>
+			<div class="bouton_footer">Aide</div>
+		</footer>
+	</body>
+	
+</html>

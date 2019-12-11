@@ -1,0 +1,100 @@
+html
+{
+	height: 99%;
+}
+
+body
+{
+	height: 100%;
+	margin: auto;
+    padding: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main
+{
+	background-color: rgb(255,239,192);
+	width: 85%;
+	height: 85%;
+	border: 2px orange solid;
+	border-radius: 80px; 
+}
+
+header
+{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	height: 40%;
+	/*border: 2px black solid;*/
+}
+
+#logo
+{
+	width: auto;
+	height: 85%;
+}
+
+section
+{
+	height: 40%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	/*border: 2px black solid;*/
+}
+
+.connexion
+{
+	border: 2px orange solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 20%;
+	width: 30%;
+	margin-top: 2%;
+	border-radius: 10px;
+	color: rgb(139,102,10);
+	font-weight: bold;
+}
+
+footer
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 18%;
+	/*border: 2px black solid;*/
+}
+
+#bouton_connexion
+{
+	background-color: rgba(0,196,0, 0.5);
+	border: 2px green solid;	
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30%;
+	width: 12%;
+	margin-right: 2%;
+	text-decoration: none;
+	color: green;
+}
+
+#bouton_quitter
+{
+	background-color: rgba(255,110,110, 0.5);
+	border: 2px red solid;	
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30%;
+	width: 12%;
+	margin-right: 6%;
+	color: red;
+}

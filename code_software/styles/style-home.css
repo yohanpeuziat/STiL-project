@@ -1,0 +1,93 @@
+body, header, main, footer, .left-panel, .center-panel, .right-panel {
+	display: flex;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #eee;
+	overflow: hidden;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+}
+
+#map {
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/carte.png");
+	background-size: 80% 98%;
+	background-repeat: no-repeat;
+}
+
+.light {
+	position: absolute;
+	height: 36px;
+	width: 18px;
+	background-color: black;
+}
+
+#light-1 {
+	left : 56%;
+	top: 62%;
+}
+
+#light-2 {
+	left : 60%;
+	top: 58%;
+}
+
+#light-3 {
+	left : 57%;
+	top: 54%;
+}
+
+#light-4 {
+	left : 53%;
+	top: 56%;
+}
+
+#light-5 {
+	left : 67%;
+	top: 53%;
+}
+
+#light-6 {
+	left : 71%;
+	top: 49%;
+}
+
+#light-7 {
+	left : 68%;
+	top: 45%;
+}
+
+#light-8 {
+	left : 64%;
+	top: 47%;
+}
+
+.red-light {
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	border-radius: 5px;
+	background-color: rgba(255, 0, 0, 0.5);
+	left: 4;
+	top: 4;
+}
+
+
+.green-light {
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	border-radius: 5px;
+	background-color: rgba(0, 255, 0, 0.5);
+	left: 4;
+	bottom: 4;
+}
+
+
