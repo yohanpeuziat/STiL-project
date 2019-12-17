@@ -14,13 +14,13 @@ const int secondGreenLightPin =  5;
 // delais apres captation d un vehicule proche et loin
 const int delay_1 = 750;
 const int delay_2 = 2500;
+const int delay_3 = 6000;
 // delais maximum pour passage d un pieton
 const unsigned long pedestrianMaxDelay = 10000;
 // temps relatif au passage d un etat a un autre
 unsigned long startTimer = 0;  // in ms
 unsigned long currentTimer = 0;
 unsigned long periodTimer = 0;
-
 // Definition de l'OFFSET des capteurs
 const int sensor_offset = 450;
 
@@ -67,7 +67,8 @@ RH_RF95<SoftwareSerial> driver(COMSerial);
 #define MESH4_ADDRESS 4
 
 // choix de la variable pour l'intersection 
-RHMesh manager(driver, MESH3_ADDRESS);
+RHMesh manager(driver, MESH3
+_ADDRESS);
 
 
 
@@ -179,12 +180,12 @@ void doStateChange() {
       main_to_green();
       newState = 1;
       resetTimers();
-      delay(delay_2);
+      delay(delay_3);
     } else {
       second_to_green();
       newState = 2;
       resetTimers();
-      delay(delay_2);
+      delay(delay_3);
     }
   }
   
